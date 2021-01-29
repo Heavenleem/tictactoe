@@ -6,10 +6,14 @@ numberTurns = 0;
 
 let gameEnd;
 gameEnd = false;
+//Declare a function called with two parameters that removes the button of the corresponding ID, and changes the text of the div that is the tileId to the player variable.
 
 function performLogic(buttonID, tileId) {
   $(buttonID).hide();
+  $(tileId).text (currentPlayer)
   changeplayer();
+  
+  console.log (currentPlayer)
   // player just took a turn, time to give the next player a turn
 }
 
@@ -20,6 +24,12 @@ function changeplayer() {
     currentPlayer = "X";
   }
 }
+function wonPlayer(TileId1, TileId2, TileId3){
+  
+}
+//- [ ] Declare a function with 3 parameters of the tileIds, and return if the value of the each of the tileIds are equal to the current player. This function will check if the player has won.
+
+
 
 
 
